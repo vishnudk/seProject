@@ -1,0 +1,118 @@
+body{
+    /* background-color: #272525; */
+    /* background-image: url('Natural Image 4K.jpg'); */
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+ 
+    background-image: linear-gradient(to right, rgb(98, 0, 189),rgb(45, 156, 230));
+}
+
+h1,h2,h3,h4{
+    color: rgb(52 137 225);
+    font-family:  Arial ,Sans-serif	;
+
+}
+#login-select{
+    display: flex;
+}
+
+#main-box{
+    /* background-color: white; */
+
+    height:467px;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right:0px ;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 35%;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    width: 80%;
+    margin-left:6%;
+    border: none;
+    outline:none;
+    padding-top: 50px;
+    border-bottom: 1px solid #3781df;
+}
+input:focus{
+    border-bottom: 3px solid #2c66b3;
+
+}
+header{
+    /* width: 100%; */
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 1px;
+    margin: -9px;
+    display: flex;
+}
+
+#left-corner{
+    position: relative;
+    left: 75%;
+}
+
+#title-of-page{
+    position: relative;
+    left: 44%;
+}
+
+.btn-login{
+    width: 50%;
+    color: black;
+    margin-top: -5px;
+    padding: 12px;
+    border: none;
+    /* background-color: white; */
+    outline:none;
+}
+
+.btn-login:hover{
+    background-color: rgb(158, 158, 158);
+}
+
+#singin-btn{
+border-top-left-radius: 10px;
+background-color: white;
+}
+
+#singup-btn{
+ width:52%;
+ background-color:rgb(158, 158, 158);
+ border-top-right-radius: 10px;
+}
+
+#singin{
+display: block;
+}
+
+#singup{
+    display: none;
+}
+
+p{
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color:rgb(52 137 225);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px 18px;
+    font-family:  Arial ,Sans-serif	;
+    border-radius: 10px;
+    outline:none;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
