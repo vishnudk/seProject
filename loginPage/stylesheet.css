@@ -1,24 +1,36 @@
 body{
     /* background-color: #272525; */
-    /* background-image: url('Natural Image 4K.jpg'); */
+    background-image:  linear-gradient(to right, #55e5f8, #47c1d1);
+    /* background-image: url('Hand Painted Mountain Forest Background Material.jpg');
+    background-repeat: no-repeat;     
+    background-size: cover;
+    width:100%;
+    height:auto; */
     /* filter: blur(8px); */
     /* -webkit-filter: blur(8px); */
  
-    background-image: linear-gradient(to right, rgb(98, 0, 189),rgb(45, 156, 230));
+    /* background-image: linear-gradient(to right, rgb(98, 0, 189),rgb(45, 156, 230)); */
+      /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+  /* height: 100%;  */
+  
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 h1,h2,h3,h4{
     color: rgb(52 137 225);
     font-family:  Arial ,Sans-serif	;
-
 }
+/* } */
 #login-select{
     display: flex;
 }
 
 #main-box{
     /* background-color: white; */
-
     height:467px;
     padding: 5px;
     padding-left: 0px;
@@ -32,6 +44,7 @@ h1,h2,h3,h4{
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 14px 11px 33px black;
 }
 input{
     width: 80%;
@@ -76,6 +89,8 @@ header{
 
 .btn-login:hover{
     background-color: rgb(158, 158, 158);
+    /* opacity: 0.5; */
+
 }
 
 #singin-btn{
