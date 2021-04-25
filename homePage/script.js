@@ -2,8 +2,7 @@ var n = 0;
 var prv = 0;
 var shownNoti = 0;
 function hiFun() {
-    // alert("hello man");
-    // document.getElementById("menu-bar").style.transitionDelay = "2s";
+
     if (document.getElementById("menu-bar").style.width == "20%") {
         document.getElementById("menu-bar").style.width = "0%";
     }

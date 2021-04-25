@@ -4,11 +4,16 @@ body{
 
 #nav-bar{
     background-color: white;
-    width: 100%;
-    padding: 10px;
+    width: 11%;
+    padding: 6px;
+    padding-right: 89%;
     margin-top: -7px;
     margin-left: -7px;
+    padding-right: 89.7%;
+    align-items: center;
+    display: inline-flex;
 }
+
 
 
 
@@ -42,8 +47,10 @@ body{
 
 #menu-bar h4{
     cursor: pointer;
-
-    color:gray;
+    color: gray;
+    border-bottom: 1px solid;
+    text-align: center;
+    padding-bottom: 18px;
 }
 #menu-bar h4:hover{
     color: white;
@@ -59,8 +66,11 @@ body{
 
 #p-info h4{
     position: relative;
-    top:70%;
-    color:white;
+    top: 70%;
+    color: white;
+    border-bottom: none;
+    padding: 0px;
+
 }
 #id-pic{
     height: 40%;
@@ -86,8 +96,8 @@ body{
         color: white;
         border-radius: 50%;
         position: relative;
-        left: 88.5%;
-        top: -16px;
+        left: 12%;
+        top: -11px;
         padding-left: 5px;
         padding-right: 4px;
         opacity: 0;
@@ -96,6 +106,27 @@ body{
     .material-icons:hover{
         color:black;
     }
+
+
+#serch{
+    /* border-radius: 5px; */
+    background-color: rgb(228, 222, 222);
+    border: 1px solid #475b62;
+    position: relative;
+    left: 458%;
+    color: rgb(0, 0, 0);
+    margin-left: -142%;
+    outline: none;
+    padding: 5px;
+    padding-right: 150px;
+}
+
+#notification-icon-and-count{
+    /* align-items: center; */
+    /* margin-top: px; */
+    padding-left: 694%;
+}
+
 #notifications-display{
     position: relative;
     left: 87%;
@@ -103,9 +134,33 @@ body{
     text-align: center;
     width:10%;
     align-items: center;
-    padding-top: 0px;
+    /* padding-top: 0px; */
     height: 0px;
+
+    /* padding:0px; */
+    display: inline-block;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     overflow-x: hidden;
     transition:  2s;
     /* white-space: pre-line; */
 }
+
+#notifications-display h4{
+    border-bottom:1px solid rgb(150, 147, 147);
+    background-color: rgb(219, 210, 210);
+    padding:15px;
+    margin: 0px;
+    
+}
+
+.fa-search{
+/* background-color: red; */
+border: none;
+border: none;
+position: relative;
+left: 442%;
+padding: 5px;
+
+}
+

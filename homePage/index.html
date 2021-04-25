@@ -24,7 +24,6 @@
             if (e.target.id !== 'menu-bar' && e.target.id !== 'c-btn') {
                 hideMe.style.width = "0";
             }
-
         };
     };
 </script>
@@ -33,20 +32,27 @@
 
     <div id="nav-bar" class="c-nav">
         <button class="fas fa-bars" id="c-btn" onclick="hiFun()"></button>
-        <button class="material-icons" onclick="showNoti()">notifications</button>
+        <input type="text" name="" id="serch" placeholder=" Serch hotels here">
+        <button type="submit" class="fa fa-search"></button>
+        <div id="notification-icon-and-count">
+            <button class="material-icons" onclick="showNoti()">notifications</button>
+        </div>
         <span id="not-no"></span>
+
+
     </div>
     <div id="notifications-display">
 
     </div>
     <div id="menu-bar">
         <div id="p-info">
-            <h4 title="profile">simba</h4>
+            <h4 title="profile" id="user-name">simba</h4>
             <img src="https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A"
                 alt="" id="id-pic">
         </div>
-        <h4 onclick="addNo()">add noti</h4>
-        <H4>singout</H4>
+        <h4 onclick="addNo()" class="menu-btn">Add noti</h4>
+        <h4 class="menu-btn">Favourite</h4>
+        <H4 class="menu-btn">Sign Out</H4>
     </div>
 </body>
 
