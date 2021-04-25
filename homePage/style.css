@@ -11,13 +11,16 @@ body{
 }
 
 
-.btn{
+
+#c-btn{
     background-color:white;
     color:#475b62;
     border:none;
-}
-#c-btn{
+    size: 10px;
     cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
 }
 
 
@@ -38,8 +41,71 @@ body{
 }
 
 #menu-bar h4{
+    cursor: pointer;
+
     color:gray;
 }
 #menu-bar h4:hover{
     color: white;
+}
+#p-info{
+    background-image: linear-gradient(to bottom,rgb(5, 58, 75),rgb(43, 184, 231));
+    /* background-image: linear-gradient(to bottom,rgb(5, 13, 15),rgb(82, 84, 85)); */
+    /* background-image: url('https://i.picsum.photos/id/1027/2848/4272.jpg?hmac=EAR-f6uEqI1iZJjB6-NzoZTnmaX0oI0th3z8Y78UpKM'); */
+    height: 150px;
+    margin-top: -81px;
+    width: 100%;
+}
+
+#p-info h4{
+    position: relative;
+    top:70%;
+    color:white;
+}
+#id-pic{
+    height: 40%;
+     width: 30%; 
+     border-radius: 50%; 
+     position: relative;
+     left: -34%;
+     top: 31%;
+    }
+
+    .material-icons{
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        position: relative;
+        left: 90%;
+        color:#475b62;
+        cursor: pointer;
+    }
+
+    #not-no{
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        position: relative;
+        left: 88.5%;
+        top: -16px;
+        padding-left: 5px;
+        padding-right: 4px;
+        opacity: 0;
+    }
+
+    .material-icons:hover{
+        color:black;
+    }
+#notifications-display{
+    position: relative;
+    left: 87%;
+    background-color: white;
+    text-align: center;
+    width:10%;
+    align-items: center;
+    padding-top: 1px;
+    height: 0px;
+    overflow-x: hidden;
+    transition: height 0.5s;
+    /* white-space: pre-line; */
 }
