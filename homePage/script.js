@@ -14,13 +14,13 @@ function hiFun() {
 
 function checkNotification() {
     if (n > 0 && n != prv) {
-        var len = n - prv;
-        var i, t;
         document.getElementById("not-no").style.opacity = 1;
         document.getElementById("not-no").innerHTML = n;
+        console.log(n);
+        var len = n - prv;
+        var i, t;
         for (i = 0; i < len; i++) {
             var nEle = document.createElement("h4");
-            console.log(i);
             t = prv + i;
             nEle.innerHTML = "notification " + t;
             document.getElementById("notifications-display").appendChild(nEle);
@@ -29,7 +29,7 @@ function checkNotification() {
         prv = n;
 
     }
-    else {
+    else if (n == 0) {
         document.getElementById("not-no").style.opacity = 0;
     }
 }
