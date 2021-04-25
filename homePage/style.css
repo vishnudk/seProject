@@ -32,7 +32,7 @@ body{
 #menu-bar{
     width: 0;
     position: fixed;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 10ypx;
     z-index: 1;
     top: 0;
     left: 0;
@@ -142,7 +142,7 @@ body{
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     overflow-x: hidden;
-    transition:  2s;
+    transition:  1s;
     /* white-space: pre-line; */
 }
 
@@ -173,3 +173,11 @@ padding: 5px;
     background-color: white;
 }
 
+#chat{
+    color: white;
+    position: fixed;
+    left: 190vh;
+    font-size: 40px;
+    top: 90vh;
+    cursor: pointer;
+}

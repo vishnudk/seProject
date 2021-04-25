@@ -46,8 +46,17 @@ function addNo() {
 function showNoti() {
     if (n > 0) {
         if (document.getElementById("notifications-display").style.height == "0px") {
-            document.getElementById("notifications-display").style.height = "auto";
-            shownNoti = 0;
+            if (n <= 5) {
+                var tmp = n * 50;
+                document.getElementById("notifications-display").style.height = tmp + "px";
+                shownNoti = 0;
+            }
+            else {
+                var tmp = 250;
+                document.getElementById("notifications-display").style.height = tmp + "px";
+                shownNoti = 0;
+            }
+
         }
         else {
             document.getElementById("notifications-display").style.height = "0px";
