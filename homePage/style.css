@@ -32,7 +32,7 @@ body{
 #menu-bar{
     width: 0;
     position: fixed;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 10px;
     z-index: 1;
     top: 0;
     left: 0;
@@ -153,8 +153,13 @@ body{
     margin: 0px;
     
 }
+#notifications-display h4:hover{
+    background-color: white;
+}
 
 .fa-search{
+outline: none;
+cursor: pointer;
 /* background-color: red; */
 border: none;
 border: none;
@@ -162,5 +167,9 @@ position: relative;
 left: 442%;
 padding: 5px;
 
+}
+
+.fa-search:hover{
+    background-color: white;
 }
 

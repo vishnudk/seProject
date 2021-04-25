@@ -25,6 +25,7 @@ function checkNotification() {
             var nEle = document.createElement("h4");
             t = prv + i;
             nEle.innerHTML = "notification " + t;
+            nEle.className = "notificationDisp";
             document.getElementById("notifications-display").appendChild(nEle);
 
         }
