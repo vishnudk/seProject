@@ -1,5 +1,6 @@
 var n = 0;
 var prv = 0;
+var shownNoti = 0;
 function hiFun() {
     // alert("hello man");
     // document.getElementById("menu-bar").style.transitionDelay = "2s";
@@ -14,8 +15,10 @@ function hiFun() {
 
 function checkNotification() {
     if (n > 0 && n != prv) {
-        document.getElementById("not-no").style.opacity = 1;
-        document.getElementById("not-no").innerHTML = n;
+        if (shownNoti > 0) {
+            document.getElementById("not-no").style.opacity = 1;
+            document.getElementById("not-no").innerHTML = shownNoti;
+        }
         console.log(n);
         var len = n - prv;
         var i, t;
@@ -29,19 +32,26 @@ function checkNotification() {
         prv = n;
 
     }
-    else if (n == 0) {
+    if (shownNoti == 0) {
         document.getElementById("not-no").style.opacity = 0;
     }
 }
 
 function addNo() {
     n = n + 1;
+    shownNoti = shownNoti + 1;
 
 }
 
 function showNoti() {
     if (n > 0) {
-        document.getElementById("notifications-display").style.height = "auto";
+        if (document.getElementById("notifications-display").style.height == "0px") {
+            document.getElementById("notifications-display").style.height = "auto";
+            shownNoti = 0;
+        }
+        else {
+            document.getElementById("notifications-display").style.height = "0px";
+        }
     }
     else {
         alert("no notifications !!");
