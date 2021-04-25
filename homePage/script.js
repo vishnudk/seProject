@@ -1,4 +1,5 @@
 var n = 0;
+var prv = 0;
 function hiFun() {
     // alert("hello man");
     // document.getElementById("menu-bar").style.transitionDelay = "2s";
@@ -12,9 +13,20 @@ function hiFun() {
 }
 
 function checkNotification() {
-    if (n > 0) {
+    if (n > 0 && n != prv) {
+        var len = n - prv;
+        var i, t;
         document.getElementById("not-no").style.opacity = 1;
         document.getElementById("not-no").innerHTML = n;
+        for (i = 0; i < len; i++) {
+            var nEle = document.createElement("h4");
+            console.log(i);
+            t = prv + i;
+            nEle.innerHTML = "notification " + t;
+            document.getElementById("notifications-display").appendChild(nEle);
+
+        }
+        prv = n;
 
     }
     else {
