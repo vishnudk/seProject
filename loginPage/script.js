@@ -1,3 +1,23 @@
+function changeImg() {
+    // alert("hello ")
+    url = ['hotel1.jpg',
+        'hotel2.jpg',
+        'hotel3.jpg',
+        'hotel4.jpg'
+    ]
+    cnt = 0
+    bcImg = document.body.style;
+    bcImg.backgroundImage = 'url("hotel1.jpg")';
+
+    setInterval(() => {
+        // console.log(cnt);
+        if (cnt > 3) {
+            cnt = 0;
+        }
+        bcImg.backgroundImage = 'url("' + url[cnt] + '")';
+        cnt++;
+    }, 5000);
+}
 function changeForm(e) {
     if (document.getElementById("singup-btn").style.backgroundColor != "white" && e == 'up') {
         document.getElementById("singup-btn").style.backgroundColor = "white";

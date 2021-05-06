@@ -1,5 +1,15 @@
 body{
-    background-color: #475b62;
+    /* background-color: #475b62; */
+    /* background: url('hotel4.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    transition-delay: 1s;
+    -webkit-transition: background 1.5s linear;
+    -moz-transition: background 1.5s linear;
+    -o-transition: background 1.5s linear;
+    -ms-transition: background 1.5s linear;
+    transition: background 1.5s linear;
     /* background-image:  linear-gradient(to right, #55e5f8, #47c1d1); */
     /* background-image: url('Hand Painted Mountain Forest Background Material.jpg');
     background-repeat: no-repeat;     

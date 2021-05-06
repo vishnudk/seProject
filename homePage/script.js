@@ -1,6 +1,8 @@
 var n = 0;
 var prv = 0;
 var shownNoti = 0;
+
+
 function hiFun() {
 
     if (document.getElementById("menu-bar").style.width == "20%") {
