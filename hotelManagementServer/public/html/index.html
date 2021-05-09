@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grand Goose Hotel</title>
+    <link rel="shortcut icon" href="images/gg.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Document</title>
+    <script src="javascripts/script.js"></script>
+</head>
+
+<body onload="changeImg()">
+    <div id="bg-image"></div>
+    <div id="main-box">
+        <div id="login-select">
+            <button id="singin-btn" class="btn-login" onclick="changeForm('in')">Signin</button>
+            <button id="singup-btn" class="btn-login" onclick="changeForm('up')">Singup</button>
+        </div>
+
+        <div id="singin">
+            <h2 style="text-align: center;">signIn</h2>
+            <form action="/userLogin" id='loginForm' onsubmit="loginData(this)">
+                <!-- <p>User name</p> -->
+                <input type="text" name="" id="userNameLogin" placeholder="User Name">
+                <!-- <p>Password</p> -->
+                <input type="password" name="" id="passWrdLogin" placeholder="Password">
+                <br>
+                <button type="submit" style="width: 50%; margin-left: 25%; margin-top:35%;">Submit</button>
+            </form>
+
+        </div>
+
+        <div id="singup">
+            <form action="" id="signinForm" onsubmit="submitData(this)">
+                <h2 style="text-align: center;">signUp</h2>
+                <!-- <p>User name</p> -->
+                <input type="text" name="" id="userName" placeholder="User Name">
+                <!-- <p>Password</p> -->
+                <input type="password" name="" id="passWrd" placeholder="Password">
+                <br>
+                <!-- <p>Confirm Password</p> -->
+                <input type="password" name="" id="cpassWrd" placeholder="Confirm Password">
+                <br>
+                <label id="errorMsg"></label>
+                <button type="submit" style="width: 50%; margin-left: 25%; margin-top:20%;">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+    <script>
+        $("#signinForm").submit(function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
