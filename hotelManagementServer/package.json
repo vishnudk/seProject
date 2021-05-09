@@ -1,20 +1,3 @@
-{
-  "name": "hotelmanagementserver",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "express-favicon": "^2.0.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "mongodb": "^3.6.6",
-    "mongoose": "^5.12.7",
-    "morgan": "~1.9.1",
-    "serve-favicon": "^2.5.0"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6984a002339f0dd840d72c7415799017109aa12a9e7da5c3c0b9cb1ecb367d9b
+size 451
